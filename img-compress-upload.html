@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas</title>
+    <style>
+        body{
+            font-size: 100px;
+        }
+        .preview {
+            display: inline-block;
+           /*   width: 4.99rem;
+            height: 6.66rem; 
+            overflow: hidden; */
+         /*    width: 4.99rem;
+            height: 6.66rem; */
+            /* border: 1px solid gray; */
+            /* background-image: url(img/iconfont-tianjia.png); */
+            /* background-repeat: no-repeat; */
+            /* background-size:cover ; */
+        }            
+        .file {
+            position: absolute;
+            left: -1000px;
+            top:0;
+        }
+       .preview img{
+            width: 4.99rem;
+            height: 6.66rem; 
+        }
+        label{
+        	font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+ <div class="image-compress">
+    <div class="preview">
+         <img src="微信图片_20180413174614.png"  alt="">
+    </div>
+    <label>
+        <input class="file" type="file" accept="image/*" multiple>
+        <!--下边的是支持手机拍照上传-->
+        <!-- <input type="file" accept="image/*" capture="camera" > -->
+        <!-- 可在此处添加标签，添加内容 -->
+        选择上传图片，可单选，可框选。
+    </label>
+ </div>  
+ <button id="upLoad">点击上传</button>
+<script src="img-compress-upload.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
