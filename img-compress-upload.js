@@ -2,7 +2,7 @@
 * @Author: ww
 * @Date:   2018-04-24 13:59:42
 * @Last Modified by:   ww
-* @Last Modified time: 2018-04-27 10:48:28
+* @Last Modified time: 2018-04-27 15:56:34
 */
 function  pictureCompression(obj){
 	this.el=obj.imageCompress;
@@ -116,7 +116,7 @@ pictureCompression.prototype={
 	        var newUrl = canvas.toDataURL('image/jpeg', compressRate);//base64 格式
 	        //console.log(canvas.toDataURL('image/jpeg', 0.92));
 	// 　　　that.preview.style.backgroundImage +='url(' + newUrl + ')';
-	        that.preview.innerHTML += "<img src = "+ newUrl +">";
+			that.preview.innerHTML += "<a href="+newUrl+" download ><img src = "+ newUrl +"></a>";
 	        that.compressArr.push(newUrl);
    		}
  	}
